@@ -1,0 +1,132 @@
+
+/******************* Base Styles ********************/
+	* {
+		/* Clear and Set CSS sizing */
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {
+		/* Font and color preferences */
+		font-family: Tahoma, Geneva, sans-serif;
+		font-size: 110%;
+		background-color: #D4DBC1;  /*light grey*/
+	}
+	section {
+		/* Single Row width spreads entire width of screen */
+		width: 100%;
+	}
+	article {
+		/* Float sections to align left to each other */
+		float: left;
+	}
+	div {
+		/* 1px border as specified */
+		border: 1px solid black;
+		/* Color preferences */
+		background-color: #FF0000; /*red*/
+		color: white;
+		/* Padding for text from edges and down from Title */
+		padding: 2em .75em .75em .75em; /* Set in 'em' to be relevant to Font Size changes */
+		/* Set relative for repositioning and Title position */
+		position: relative;
+	}
+	h2 {
+		/* Color preferences */
+		color: #DDFA1E;  /*yellow*/
+		background-color: #06060F;  /*dark blue*/
+		/* 1px border as specified */		
+		border: 1px solid #DDFA1E;  /*yellow*/
+		/* Size Title 25% larger */
+		font-size: 125%;
+		/* Pad and Center for nice visuals */
+		text-align: center;
+		padding: .2em; /* Set in 'em' to be relevant to Font Size changes */
+		/* Position Title to Top Right Corner of region */
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+	h1 {
+		/* Color and Size Header 75% larger */
+		color: black;
+		font-size: 175%;
+		/* Center and Margin 2% to resize 
+		and be visually similar to other Margins and Elements */
+		text-align: center;
+		margin: 2%;
+	}
+
+/************* Responsive Media Queries *************/
+	/* Sizes are set in Percent's to help maintain consistent Size and Spacing 
+   		between Devices, Resizes, Zooms etc. */
+   /* Margins and Padding are combined to make "approximately" 
+   		4% consistent Spacing throughout all sizes */
+
+	
+	/* Small Devices */
+	@media (max-width: 767px){
+		/* Padding in the Single Row to combine with the div Container Margin 
+		for outer Spacing visually similar to inner Spacing Margins */
+		section {
+			/* 2% pad + 2% div margin combine to about 4% for Small screens with 1 column */
+			padding: 2%;
+		}
+		/* Set all Columns to take entire Row for each */
+		article {
+			width: 100%;
+		}
+		div {
+			/* Container Margin 2% combines with 2% section pad for outer, and itself for inner, 
+			to about 4% Spacing for Small screens with 1 column */
+			margin: 2%;
+		}
+	}
+
+	/* Medium Devices */
+	@media (min-width: 768px) and (max-width: 991px){
+		/* Padding in the Single Row to combine with the div Container Margin 
+		for outer Spacing visually similar to inner Spacing Margins */
+		section {
+			/* 2% pad + 4% div margin combine to about 4% for Medium screens with 2 columns */
+			padding: 2%;
+		}
+		.col-md-6 {
+			/* First 2 Columns set to equally take half the row */
+			width: 50%;
+		}
+		.col-md-6 div { /* First 2 Column Container 
+			Margins 4% combines with 2% section pad for outer, and itself for inner, 
+			to about 4% Spacing for Medium screens with 2 columns */
+			margin: 4%;
+		}
+		#col-md-12 {
+			/* Set Third Column to take entire Row */
+			width: 100%;
+		}
+		#col-md-12 div { /* Third Column Container 
+			Margin 2% combines with 2% section pad for outer, and 4% upper for inner, 
+			to about 4% Spacing for Medium screens with 2 columns */
+			margin: 2%;
+		}
+	}
+
+	/* Large Devices */
+	@media (min-width: 992px){
+		/* Padding in the Single Row to combine with the div Container Margin 
+		for outer Spacing visually similar to inner Spacing Margins */
+		section {
+			/* 2% pad + 6% div margin combine to about 4% for Large screens with 3 columns */
+			padding: 2%;
+		}
+		/* Set all 3 Columns to equally take 1/3 of row */
+		article {
+			width: 33.33%;
+		}
+		div {
+			/* Container Margin 6% combines with 2% section pad for outer, and itself for inner, 
+			to about 4% Spacing for Large screens with 3 columns */
+			margin: 6%;
+		}
+	}
+	
