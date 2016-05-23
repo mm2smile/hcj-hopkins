@@ -33,7 +33,7 @@
 	}
 	h2 {
 		/* Color preferences */
-		background-color: #06060F;  /*dark blue*/
+		color: #06060F;  /*dark blue*/
 		/* 1px border as specified */		
 		border: 1px solid #DDFA1E;  /*yellow*/
 		/* Size Title 25% larger */
@@ -46,15 +46,15 @@
 		top: 0px;
 		right: 0px;
 	}
-	/* Unique color for each region Title */
+	/* Unique background color for each region Title */
 	#chicken {
-		color: #DDFA1E; /*yellow*/	
+		background-color: #1EFAA9; /*green*/ 
 	}
 	#beef {
-		color: #FA1E6B; /*pink*/
+		background-color: #FA1E6B; /*pink*/
 	}
 	#sushi {
-		color: #1EFAA9; /*green*/
+		background-color: #3B1EFA; /*blue*/	
 	}
 	h1 {
 		/* Color and Size Header 75% larger */
