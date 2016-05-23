@@ -33,7 +33,6 @@
 	}
 	h2 {
 		/* Color preferences */
-		color: #DDFA1E;  /*yellow*/
 		background-color: #06060F;  /*dark blue*/
 		/* 1px border as specified */		
 		border: 1px solid #DDFA1E;  /*yellow*/
@@ -46,6 +45,16 @@
 		position: absolute;
 		top: 0px;
 		right: 0px;
+	}
+	/* Unique color for each region Title */
+	#chicken {
+		color: #DDFA1E; /*yellow*/	
+	}
+	#beef {
+		color: #FA1E6B; /*pink*/
+	}
+	#sushi {
+		color: #1EFAA9; /*green*/
 	}
 	h1 {
 		/* Color and Size Header 75% larger */
